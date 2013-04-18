@@ -19,5 +19,15 @@ namespace KataTests
             Assert.DoesNotThrow(()=>monkey.Add("1"));
     
         }
+    
+        [Test()]
+        public void SetContainsValuePassedIn()
+        {
+            Set one = new Set();
+            one.Add("1");
+
+            Assert.That(one[0] == "1");
+
+        }    
     }
 }
