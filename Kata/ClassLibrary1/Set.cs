@@ -4,18 +4,18 @@ namespace ClassLibrary1
 {
     public class Set
     {
-        private readonly object[] _ourSet;
+        public object[] OurSet = new object[10];
 
-        public Set()
+        public object this[int index]
         {
-            _ourSet = new object[10];
+            get { return OurSet[index]; }
         }
-
+        
         public void Add(object item)
         {
-            _ourSet[0] = item;
-        }
 
+
+            OurSet[0] = item;
+        }
     }
 }
-
