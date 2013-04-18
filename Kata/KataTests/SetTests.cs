@@ -1,9 +1,4 @@
-﻿﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ClassLibrary1;
+﻿using ClassLibrary1;
 using NUnit.Framework;
 
 namespace KataTests
@@ -26,7 +21,7 @@ namespace KataTests
             Set one = new Set();
             one.Add("1");
 
-            Assert.That(one[0] == "1");
+            Assert.That(one[0], Is.EqualTo("1"));
 
         }    
     }
