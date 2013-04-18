@@ -4,9 +4,16 @@ namespace ClassLibrary1
 {
     public class Set
     {
-        public void Add(object s)
+        private readonly object[] _ourSet;
+
+        public Set()
         {
-            throw new NotImplementedException();
+            _ourSet = new object[10];
+        }
+
+        public void Add(object item)
+        {
+            _ourSet[0] = item;
         }
     }
 }
