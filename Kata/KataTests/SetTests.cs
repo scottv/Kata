@@ -15,9 +15,8 @@ namespace KataTests
         public void CanAddAnItemToSet()
         {
             Set monkey = new Set();
-            
-            Assert.DoesNotThrow(()=>monkey.Add("1"));
-    
+
+            Assert.DoesNotThrow(() => monkey.Add("1"));
         }
     }
 }
